@@ -26,6 +26,9 @@ endif
 " smarttabs
 set smarttab
 
+autocmd VimEnter * NERDTree
+autocmd VimEnter * wincmd p
+
 
 " All the Indenting Stuff
 " while auto-indenting, indent by this much
@@ -93,13 +96,5 @@ set shortmess+=I
 
 
 
-" MiniBuf
-let g:miniBufExplModSelTarget = 1
-let g:miniBufExplorerMoreThanOne = 2
-let g:miniBufExplModSelTarget = 0
-let g:miniBufExplUseSingleClick = 1
-let g:miniBufExplMapWindowNavVim = 1
-let g:bufExplorerSortBy = "name"
-autocmd BufRead,BufNew :call UMiniBufExplorer
 
 " let g:Powerline_symbols = 'fancy'
